@@ -58,3 +58,34 @@ print(sum)
 #dict
 d = {'michael':95,'bob':75,'tracy':85}
 print(d['michael'])
+
+#函数
+def my_abs(x):
+	if x >= 0:
+		return x
+	else:
+		return -x
+print(my_abs(-9))
+
+print("\r")
+def power(x,n=2):
+	s = 1
+	while n > 0:
+		s = s * x
+		n = n - 1
+	return s
+
+print(power(5,3))
+
+def calc(*number):
+	sum = 1
+	for n in number:
+		sum = sum * n
+	return sum
+print(calc(4,2,3))
+
+def fact(n):
+    if n==1:
+        return 1
+    return n * fact(n - 1)
+print(fact(4))
