@@ -38,7 +38,7 @@ s4 = r'''hello,
 lisa'''
 print('n=',n,'\nf=',f,'\ns1=',s1,'\ns2=',s2,'\ns3=',s3,'\ns4=',s4)
 
-#列表[] tuple()tuple一旦初始化就不能修改,但指向的list本身可变
+#list列表[] 元祖tuple()tuple一旦初始化就不能修改,但指向的list本身可变
 classmates = ['lyf','李雷','韩梅梅']
 print('classmates:',classmates)
 print(len(classmates))	#长度
@@ -69,6 +69,9 @@ while n>0:
 	n = n-2
 print(sum)
 
-#dict
-d = ['michael':95,'bob':75,'tracy':85]
-d['michael']
+#字典dict:key-value 集合set:不能重复
+d = {'michael':95,'bob':75,'tracy':85}
+print(d['michael'])
+
+s = set([1, 1, 2, 2, 3, 3])
+print(s)
